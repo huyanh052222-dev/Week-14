@@ -1,0 +1,190 @@
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --a-main-color: #4CAF50;
+    --a-accent-color: #EBEBEB;
+    --b-heading-color: #AFBDC4;
+}
+
+
+.section-1{
+    background-color: #465564;
+    padding: 206px 123px 204px 123px;
+    position: relative;
+    z-index: 1;
+    .sec-1-heading-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        margin-bottom: 36px;
+        .sec-1-small-heading-wrap{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .text{
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: var(--b-heading-color);
+            }
+            .line{
+                display: flex;   
+            }
+        }
+        .sec-1-main-heading{
+            font-weight: 700;
+            font-size: 88px;
+            line-height: 80px;
+            color: white;
+            z-index: 1;
+            span{
+                color: var(--a-main-color);
+            }
+        }
+        .sec-1-content{
+            width: 369px;
+            font-family: 'Work Sans',sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: justify;
+            color: var(--a-accent-color);
+            z-index: 1;
+        }
+    }
+    .sec-1-button{
+        width: 206px;
+        height: 60px;
+        text-align: center;
+        align-content: center;
+        background-color: var(--a-main-color);
+        color: white;font-family: Work Sans;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .sec-1-hero-wrap{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 818px;
+        width: 930px;
+        opacity: 30%;
+        background-image: linear-gradient(to bottom, black, grey);
+    }
+    .sec-1-hero{
+        background-image: url(/Asserts/Bg-hero.png);
+        background-size: cover;
+        width: 930px;
+        height: 818px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .sec-1-direction{
+        display: flex;
+        gap: 16px;
+        position: absolute;
+        bottom: 30px;
+        right: 130px;
+    }
+}
+header{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 1180px;
+    padding: 0 130px 0 130px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    .logo-header{
+        font-weight: 800;
+        font-size: 36px;
+        letter-spacing: 4px;
+        line-height: 46px;
+        color: var(--a-main-color);
+    }
+    navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        font-family: 'Work Sans', sans-serif;
+        .nav-item-wrap{
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+            .nav-item{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: var(--a-accent-color);
+                align-content: center;
+            }
+        }
+        .nav-button{
+            width: 180px;
+            height: 60px;
+            background-color: var(--a-main-color);
+            text-align: center;
+            align-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: white;
+        }
+        
+    }
+}
+
+
+
+
+
+
+/* RES DESKTOP */
+@media screen and (max-width:1335px) {
+    .section-1{
+        .sec-1-hero,.sec-1-hero-wrap{
+            transition: all 0.5s ease; 
+            width: 780px;
+            height: 818px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1170px) {
+    .section-1{
+        padding: 206px 100px 204px 100px;
+        transition: all 0.5s ease;
+        .sec-1-hero,.sec-1-hero-wrap{
+            transition: all 0.5s ease; 
+            width: 690px;
+            height: 818px;
+        }
+    }
+    header{
+        padding: 0 100px 0 100px;
+        transition: all 0.5s ease;
+        .logo-header{}
+        navbar{
+            .nav-item-wrap{
+                gap: 40px;
+                transition: all 0.5s ease;
+                .nav-item{}
+            }
+            .nav-button{}
+        }
+    }
+}
