@@ -1,7 +1,7 @@
 @media screen and (max-width: 882px) {
 
     .section-1{
-        padding: 400px 60px 140px 60px;
+        padding: 400px 60px 30px 60px;
         transition: all 0.5s ease;
         .sec-1-hero,.sec-1-hero-wrap{
             transition: all 0.5s ease; 
@@ -13,8 +13,12 @@
         }
         .sec-1-direction{
             right: 60px;
-            top: 42%;
+            top: 44%;
             transition: all 0.5s ease;
+            img{
+                width: 30px;
+                height: 30px;
+            }
         }
         .sec-1-heading-wrap{
             gap: 8px;
@@ -83,8 +87,12 @@
         }
         .sec-1-direction{
             right: 20px;
-            top: 49%;
+            top: 51%;
             transition: all 0.5s ease;
+            img{
+                width: 30px;
+                height: 30px;
+            }
         }
         .sec-1-heading-wrap{
             gap: 8px;
