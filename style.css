@@ -53,7 +53,6 @@ body{
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
-            text-align: justify;
             color: var(--a-accent-color);
             z-index: 1;
         }
@@ -142,7 +141,9 @@ header{
             line-height: 24px;
             color: white;
         }
-        
+    }
+    .hamburger-bar{
+        display: none;
     }
 }
 
@@ -173,9 +174,77 @@ header{
             width: 690px;
             height: 818px;
         }
+        .sec-1-direction{
+            right: 100px;
+            transition: all 0.5s ease;
+        }
     }
     header{
         padding: 0 100px 0 100px;
+        transition: all 0.5s ease;
+        .logo-header{}
+        navbar{
+            .nav-item-wrap{
+                gap: 40px;
+                transition: all 0.5s ease;
+                .nav-item{}
+            }
+            .nav-button{}
+        }
+    }
+}
+
+
+
+/* TABLET */
+@media screen and (max-width:1060px) {
+    .section-1{
+        padding: 170px 80px 140px 80px;
+        transition: all 0.5s ease;
+        .sec-1-hero,.sec-1-hero-wrap{
+            transition: all 0.5s ease; 
+            width: 690px;
+            height: 718px;
+        }
+        .sec-1-direction{
+            right: 80px;
+            transition: all 0.5s ease;
+        }
+        .sec-1-heading-wrap{
+            gap: 27px;
+            margin-bottom: 36px;
+            .sec-1-small-heading-wrap{
+                gap: 20px;
+                transition: all 0.5s ease;
+                .text{
+                    font-size: 17px;
+                    transition: all 0.5s ease;
+                    line-height: 32px;
+                    letter-spacing: 2px;
+                }
+                .line{}
+            }
+            .sec-1-main-heading{
+                font-size: 68px;
+                transition: all 0.5s ease;
+                span{
+                    color: var(--a-main-color);
+                }
+            }
+            .sec-1-content{
+                width: 369px;
+                font-size: 15px;
+                transition: all 0.5s ease;
+            }
+        }
+        .sec-1-button{
+            width: 206px;
+            height: 60px;
+            font-size: 18px;
+        }
+    }
+    header{
+        padding: 0 80px 0 80px;
         transition: all 0.5s ease;
         .logo-header{}
         navbar{
