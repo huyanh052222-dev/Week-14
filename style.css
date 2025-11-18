@@ -7,6 +7,7 @@ body{
     --a-main-color: #4CAF50;
     --a-accent-color: #EBEBEB;
     --b-heading-color: #AFBDC4;
+    --b-heading-color-2:#4B4B4B;
 }
 
 
@@ -55,7 +56,37 @@ body{
             line-height: 22px;
             color: var(--a-accent-color);
             z-index: 1;
+            text-align: justify;
         }
+    }
+    
+    .sec-1-hero-wrap{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 818px;
+        width: 930px;
+        opacity: 30%;
+        background-image: linear-gradient(to bottom, black, grey);
+
+    }
+    .sec-1-hero{
+        background-image: url(/Asserts/Bg-hero.png);
+        background-size: cover;
+        width: 930px;
+        height: 818px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+    .sec-1-direction{
+        display: flex;
+        gap: 16px;
+        position: absolute;
+        bottom: 30px;
+        right: 130px;
+        z-index: -1;
     }
     .sec-1-button{
         width: 206px;
@@ -67,32 +98,8 @@ body{
         font-weight: 700;
         font-size: 18px;
         line-height: 24px;
-    }
-    .sec-1-hero-wrap{
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 818px;
-        width: 930px;
-        opacity: 30%;
-        background-image: linear-gradient(to bottom, black, grey);
-    }
-    .sec-1-hero{
-        background-image: url(/Asserts/Bg-hero.png);
-        background-size: cover;
-        width: 930px;
-        height: 818px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-    }
-    .sec-1-direction{
-        display: flex;
-        gap: 16px;
-        position: absolute;
-        bottom: 30px;
-        right: 130px;
+        position: relative;
+        z-index: 10;
     }
 }
 header{
@@ -146,7 +153,139 @@ header{
         display: none;
     }
 }
+.container-wrap{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 100px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    .section-2{
+        display: flex;
+        flex-direction: row;
+        gap: 46px;
 
+        .sec-2-left{
+            position: relative;
+            .heading-wrap{
+                width: 617.5968017578125px;
+                height: 686px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .heading-1{
+                    font-family: 'Work Sans',sans-serif;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 44px;
+                    color: var(--b-heading-color-2);
+                    span{
+                        color: var(--a-main-color);
+                    }
+                }
+                .heading-2{
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: var(--b-heading-color-2);
+                }
+            }
+            .sec-2-hero-wrap{
+                
+                .sec-2-hero{
+                    position: absolute;
+                    background-image: url(Asserts/sofa-hero.jpg);
+                    background-size: cover;
+                    border: 1px solid #C8E6C9;
+                    width: 594.758056640625px;
+                    height: 532px;
+                    bottom: 32px;
+                    z-index: 1;
+                }
+                .sec-2-hero-back{
+                    position: absolute;
+                    background-color: #C8E6C9;
+                    width: 581.4354858398438px;
+                    height: 536px;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+                .sec-2-direction{
+                    display: flex;
+                    gap: 16px;
+                    position: absolute;
+                    bottom: 14px;
+                    right: 37px;
+                    .sec-2-hero-arr--1,.sec-2-hero-arr--2{
+                        z-index: 100000;
+                        height: 60px;
+                    }
+                
+                }
+            }
+        }
+        .sec-2-right{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .sec-2-item{
+                display: flex;
+                flex-direction: row;
+                gap: 23px;
+                .item-hero{
+                    width: 192.22581481933594px;
+                    height: 202px;
+                }
+                .item-hero-0,.item-hero-1,.item-hero-2{
+                    background-size: cover;
+                    background-position: center;
+                }
+                .item-hero-0{
+                    background-image: url(Asserts/sofa-1.png);
+                }
+                .item-hero-1{
+                    background-image: url(Asserts/sofa-2.jpg);
+                }
+                .item-hero-2{
+                    background-image: url(Asserts/sofa-3.jpg);
+                }
+                .item-text{
+                    max-width: 302px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 68px;
+                    .head-item{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .heading{
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 32px;
+                            letter-spacing: 3px;
+                            color: var(--b-heading-color-2);
+                        }
+                        .text{
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: var(--b-heading-color-2);
+                        }
+                    }
+                    .readmore{
+                    }
+                }
+                .spec-item-text{
+                    gap: 48px;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -159,6 +298,116 @@ header{
             transition: all 0.5s ease; 
             width: 780px;
             height: 818px;
+        }
+    }
+    .container-wrap{
+        max-width: 1070px;
+        transition: all 0.5s ease;
+        .section-2{
+            display: flex;
+            flex-direction: row;
+            gap: 46px;
+
+            .sec-2-left{
+                position: relative;
+                width: 540px;
+                height: 609px;
+                .heading-wrap{
+                    transition: all 0.5s ease;
+                    width: 517.758056640625px;
+                    height: 455px;
+                    .heading-1{
+                        font-size: 36px;
+                        line-height: 44px;
+                        span{
+                            color: var(--a-main-color);
+                        }
+                    }
+                    .heading-2{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                .sec-2-hero-wrap{
+                    /* width: 100%;
+                    height: 100%; */
+                    .sec-2-hero{
+                        width: 517.758056640625px;
+                        height: 455px;
+                        bottom: 32px;
+                        transition: all 0.5s ease;
+                    }
+                    .sec-2-hero-back{
+                        width: 517.758056640625px;
+                        height: 455px;
+                        transition: all 0.5s ease;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    .sec-2-direction{
+                        display: flex;
+                        gap: 16px;
+                        position: absolute;
+                        bottom: 14px;
+                        right: 37px;
+                        height: 40px;
+                        transition: all 0.5s ease ;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                
+                    }
+                }
+            }
+            .sec-2-right{
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                .sec-2-item{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 23px;
+                    .item-hero{
+                        width: 175.22581481933594px;
+                        height: 180px;
+                        transition: all 0.5s ease;
+                    }
+                    .item-hero-0,.item-hero-1,.item-hero-2{
+                        background-size: cover;
+                    }
+                    .item-hero-0{
+                        background-image: url(Asserts/sofa-1.png);
+                    }
+                    .item-hero-1{
+                        background-image: url(Asserts/sofa-2.jpg);
+                    }
+                    .item-hero-2{
+                        background-image: url(Asserts/sofa-3.jpg);
+                    }
+                    .item-text{
+                        max-width: 302px;
+                        gap: 48px;
+                        transition: all 0.5s ease;
+                        .head-item{
+                            gap: 10px;
+                            .heading{
+                                font-size: 24px;
+                                line-height: 32px;
+                            }
+                            .text{
+                                font-size: 16px;
+                            }
+                        }
+                        .readmore{
+                        }
+                    }
+                    .spec-item-text{
+                        gap: 30px;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
         }
     }
 }
@@ -179,6 +428,101 @@ header{
             transition: all 0.5s ease;
         }
     }
+    .container-wrap{
+        max-width: 954px;
+        transition: all 0.5s ease;
+        .section-2{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .sec-2-left{
+                position: relative;
+                width: 440px;
+                height: 509px;
+                .heading-wrap{
+                    transition: all 0.5s ease;
+                    .heading-1{
+                        font-size: 36px;
+                        line-height: 44px;
+                        span{
+                            color: var(--a-main-color);
+                        }
+                    }
+                    .heading-2{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                .sec-2-hero-wrap{
+                    /* width: 100%;
+                    height: 100%; */
+                    .sec-2-hero{
+                        width: 417.758056640625px;
+                        height: 355px;
+                        bottom: 32px;
+                        transition: all 0.5s ease;
+                    }
+                    .sec-2-hero-back{
+                        width: 417.758056640625px;
+                        height: 355px;
+                        transition: all 0.5s ease;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+            .sec-2-right{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .sec-2-item{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 18px;
+                    .item-hero{
+                        width: 164px;
+                        height: 153px;
+                        transition: all 0.5s ease;
+                    }
+                    .item-hero-0,.item-hero-1,.item-hero-2{
+                        background-size: cover;
+                    }
+                    .item-hero-0{
+                        background-image: url(Asserts/sofa-1.png);
+                    }
+                    .item-hero-1{
+                        background-image: url(Asserts/sofa-2.jpg);
+                    }
+                    .item-hero-2{
+                        background-image: url(Asserts/sofa-3.jpg);
+                    }
+                    .item-text{
+                        max-width: 302px;
+                        gap: 25px;
+                        transition: all 0.5s ease;
+                        .head-item{
+                            gap: 10px;
+                            .heading{
+                                font-size: 24px;
+                                line-height: 32px;
+                            }
+                            .text{
+                                font-size: 16px;
+                            }
+                        }
+                        .readmore{
+                        }
+                    }
+                    .spec-item-text{
+                        gap: 8px;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+
     header{
         padding: 0 100px 0 100px;
         transition: all 0.5s ease;
@@ -254,6 +598,112 @@ header{
                 .nav-item{}
             }
             .nav-button{}
+        }
+    }
+
+    .container-wrap{
+        max-width: 750px;
+        transition: all 0.5s ease;
+        .section-2{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .sec-2-left{
+                position: relative;
+                width: 360px;
+                height: 414px;
+                .heading-wrap{
+                    transition: all 0.5s ease;
+                    .heading-1{
+                        font-size: 36px;
+                        line-height: 44px;
+                        span{
+                            color: var(--a-main-color);
+                        }
+                    }
+                    .heading-2{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+                .sec-2-hero-wrap{
+                    .sec-2-hero{
+                        width: 317.758056640625px;
+                        height: 255px;
+                        bottom: 32px;
+                        transition: all 0.5s ease;
+                    }
+                    .sec-2-hero-back{
+                        width: 317.758056640625px;
+                        height: 255px;
+                        transition: all 0.5s ease;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    .sec-2-direction{
+                        transition: all 0.5s ease ;
+                        right: 60px;
+                        bottom: 10px;
+                        gap: 10px;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            .sec-2-right{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .sec-2-item{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    .item-hero{
+                        width: 140px;
+                        height: 133px;
+                        transition: all 0.5s ease;
+                    }
+                    .item-hero-0,.item-hero-1,.item-hero-2{
+                        background-size: cover;
+                    }
+                    .item-hero-0{
+                        background-image: url(Asserts/sofa-1.png);
+                    }
+                    .item-hero-1{
+                        background-image: url(Asserts/sofa-2.jpg);
+                    }
+                    .item-hero-2{
+                        background-image: url(Asserts/sofa-3.jpg);
+                    }
+                    .item-text{
+                        max-width: 232px;
+                        gap: 28px;
+                        transition: all 0.5s ease;
+                        .head-item{
+                            gap: 5px;
+                            .heading{
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                            .text{
+                                font-size: 12px;
+                            }
+                        }
+                        .readmore{
+                            transform: scale(0.7);
+                            margin-left: -40px;
+                            height: 20px;
+                        }
+                    }
+                    .spec-item-text{
+                        gap: 8px;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
         }
     }
 }
