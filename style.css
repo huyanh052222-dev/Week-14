@@ -138,6 +138,9 @@ header{
                 color: var(--a-accent-color);
                 align-content: center;
             }
+            .active{
+                color: #FFFFFF
+            }
         }
         .nav-button{
             width: 180px;
