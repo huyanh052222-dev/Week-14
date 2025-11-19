@@ -637,11 +637,11 @@ header{
                 position: absolute;
             }
             .left{
-                left: 0;
+                left: 11px;
                 top: 45%;
             }
             .right{
-                right: 0;
+                right: 11px;
                 top: 45%;
             }
             .box1{
