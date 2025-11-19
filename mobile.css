@@ -640,6 +640,9 @@
             flex-wrap: wrap;
             gap: 34px;
             justify-content: center;
+            .left, .right{
+                display: none;
+            }
             .box1.c,.box1.b {
                 display: none;
             }

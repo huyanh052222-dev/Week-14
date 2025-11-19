@@ -18,50 +18,70 @@ body {
     padding: 206px 123px 204px 123px;
     position: relative;
     z-index: 1;
-    .sec-1-heading-wrap{
+    .sec-1-container{
         display: flex;
         flex-direction: column;
-        gap: 27px;
-        margin-bottom: 36px;
-        .sec-1-small-heading-wrap{
+        gap: 36px;
+        max-width: 1180px;
+        margin: 0 auto;
+        .sec-1-heading-wrap{
             display: flex;
-            align-items: center;
-            gap: 30px;
-            .text{
-                font-family: 'Work Sans', sans-serif;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 32px;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color: #FEFEFF;
+            flex-direction: column;
+            gap: 27px;
+            /* margin-bottom: 36px; */
+            .sec-1-small-heading-wrap{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .text{
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #FEFEFF;
+                }
+                .line{
+                    display: flex;   
+                }
             }
-            .line{
-                display: flex;   
+            .sec-1-main-heading{
+                font-weight: 700;
+                font-size: 79px;
+                line-height: 80px;
+                color: white;
+                z-index: 1;
+                span{
+                    color: var(--a-main-color);
+                }
+            }
+            .sec-1-content{
+                width: 369px;
+                font-family: 'Work Sans',sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: var(--a-accent-color);
+                z-index: 1;
+                text-align: justify;
             }
         }
-        .sec-1-main-heading{
+        .sec-1-button{
+            width: 206px;
+            height: 60px;
+            text-align: center;
+            align-content: center;
+            background-color: var(--a-main-color);
+            color: white;font-family: Work Sans;
             font-weight: 700;
-            font-size: 88px;
-            line-height: 80px;
-            color: white;
-            z-index: 1;
-            span{
-                color: var(--a-main-color);
-            }
-        }
-        .sec-1-content{
-            width: 369px;
-            font-family: 'Work Sans',sans-serif;
-            font-weight: 500;
             font-size: 18px;
-            line-height: 22px;
-            color: var(--a-accent-color);
-            z-index: 1;
-            text-align: justify;
+            line-height: 24px;
+            position: relative;
+            z-index: 10;
         }
     }
-    
+
     .sec-1-hero-wrap{
         position: absolute;
         top: 0;
@@ -90,19 +110,7 @@ body {
         right: 130px;
         z-index: 100;
     }
-    .sec-1-button{
-        width: 206px;
-        height: 60px;
-        text-align: center;
-        align-content: center;
-        background-color: var(--a-main-color);
-        color: white;font-family: Work Sans;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-        position: relative;
-        z-index: 10;
-    }
+    
 }
 header{
     position: absolute;
@@ -118,8 +126,9 @@ header{
     .logo-header{
         font-weight: 800;
         font-size: 36px;
-        letter-spacing: 4px;
+        letter-spacing: 6px;
         line-height: 46px;
+        font-family: 'Roboto';
         color: var(--a-main-color);
     }
     navbar{
@@ -623,6 +632,18 @@ header{
             flex-wrap: wrap;
             gap: 34px;
             justify-content: center;
+            position: relative;
+            .left,.right{
+                position: absolute;
+            }
+            .left{
+                left: 0;
+                top: 45%;
+            }
+            .right{
+                right: 0;
+                top: 45%;
+            }
             .box1{
                 display: flex;
                 position: relative;
@@ -687,6 +708,9 @@ header{
 
                     }
                 }
+            }
+            .c,.b{
+                opacity: 80%;
             }
         }
     }
@@ -784,6 +808,7 @@ header{
         max-width: 1180px;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         .logo {
             color: #4CAF50;
@@ -798,7 +823,7 @@ header{
             flex-direction: row;
             width: 331px;
             justify-content: space-between;
-            p {
+            div {
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 22px;
